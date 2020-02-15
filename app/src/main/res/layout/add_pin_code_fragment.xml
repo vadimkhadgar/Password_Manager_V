@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pin_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center"
+    tools:context=".access.fragments.add_pin.AddPinCode">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/create_you_pin_code"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_create_password"
+        app:layout_constraintEnd_toEndOf="@+id/et_create_password"
+        app:layout_constraintStart_toStartOf="@+id/et_create_password" />
+
+    <EditText
+        android:id="@+id/et_create_password"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_edit_text"
+        android:backgroundTint="@color/et_color_backgroundTint"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:singleLine="true"
+        android:textColor="@color/primary_text"
+        app:layout_constraintBottom_toTopOf="@+id/et_create_password_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/et_create_password_2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_edit_text"
+        android:backgroundTint="@color/et_color_backgroundTint"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:singleLine="true"
+        android:textColor="@color/primary_text"
+        app:layout_constraintBottom_toTopOf="@+id/button_save_pw"
+        app:layout_constraintEnd_toEndOf="@+id/et_create_password"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/et_create_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_create_password" />
+
+    <Button
+        android:id="@+id/button_save_pw"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/app_button"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_create_password_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/et_create_password_2"
+        app:layout_constraintTop_toBottomOf="@+id/et_create_password_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
