@@ -8,7 +8,9 @@ import androidx.room.PrimaryKey
 data class UserEntity(
     @ColumnInfo(name = "website") var website: String,
     @ColumnInfo(name = "login") var login: String,
-    @ColumnInfo(name = "password") var password: String
+    @ColumnInfo(name = "password") var password: String,
+    var expanded: Boolean = false
+
 ) {
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0

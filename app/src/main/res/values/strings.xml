@@ -25,4 +25,6 @@
     <string name="next">next</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="create_you_pin_code">Create you password!!!</string>
+    <string name="username">Username</string>
+    <string name="password_">Password</string>
 </resources>
