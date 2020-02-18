@@ -23,10 +23,7 @@ class BlankFragment : Fragment() {
             BlankFragment()
     }
 
-    //lateinit var user: ArrayList<UserEntity>
     private lateinit var adapter: UserRecyclerViewAdapter
-
-
     private lateinit var viewModel: BlankViewModel
 
     override fun onCreateView(
@@ -41,31 +38,21 @@ class BlankFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(BlankViewModel::class.java)
 
 
-//        user = ArrayList()
-//
-//        user.add(UserEntity("website", "username", "password", false))
-//        user.add(UserEntity("website", "username", "password", false))
-//        user.add(UserEntity("website", "username", "password", false))
-//        user.add(UserEntity("website", "username", "password", false))
-//        user.add(UserEntity("website", "username", "password", false))
-
-
+        // Initialization RecyclerView
         adapter = UserRecyclerViewAdapter(context!!)
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
-//        adapter.setUsers(user)
 
-         viewModel.allUsers.observe(viewLifecycleOwner, Observer { users ->
-             users.let {
-                 adapter.setUsers(it)
-             }
-         })
-
+        // Set users to RecyclerView
+        viewModel.allUsers.observe(viewLifecycleOwner, Observer { users ->
+            users.let {
+                adapter.setUsers(it)
+            }
+        })
 
         floatingActionButton.setOnClickListener {
             replaceFragmentBlankFragment(AddUserFragment())
         }
-
     }
 
     private fun replaceFragmentBlankFragment(fragment: Fragment) {
