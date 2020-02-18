@@ -40,7 +40,7 @@
                     android:layout_toStartOf="@+id/iv_rv_item"
                     android:layout_toEndOf="@+id/iv_website"
                     android:padding="8dp"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     tools:text="@string/website" />
 
