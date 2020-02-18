@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
 import com.vadimkor.passwordmanagerv.R
+import com.vadimkor.passwordmanagerv.extension.hideKeyboard
 import com.vadimkor.passwordmanagerv.ui_main.fragments.blank_fragment.BlankFragment
 import kotlinx.android.synthetic.main.add_user_fragment.*
 
@@ -43,6 +44,9 @@ class AddUserFragment : Fragment() { // R.layout.add_user_fragment
                 et_addUserFragment_password.text.toString().isEmpty() -> et_addUserFragment_password.error =
                     "Please insert Password"
                 else -> {
+
+                    hideKeyboard()
+
                     Snackbar.make(it, "Record successfully added ", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show()
 
@@ -58,7 +62,6 @@ class AddUserFragment : Fragment() { // R.layout.add_user_fragment
                         R.id.main_activity_container,
                         BlankFragment()
                     )
-                    transaction.addToBackStack(null)
                     transaction.commit()
                 }
             }
