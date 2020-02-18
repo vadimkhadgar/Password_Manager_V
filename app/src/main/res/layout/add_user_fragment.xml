@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".AddUserFragment">
+    tools:context=".ui_main.fragments.add_user_fragment.AddUserFragment">
 
     <EditText
         android:id="@+id/et_addUserFragment_website"

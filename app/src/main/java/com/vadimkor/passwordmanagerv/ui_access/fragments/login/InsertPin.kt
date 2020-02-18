@@ -1,4 +1,4 @@
-package com.vadimkor.passwordmanagerv.access.fragments.login
+package com.vadimkor.passwordmanagerv.ui_access.fragments.login
 
 import android.content.Context
 import android.content.Intent
@@ -8,11 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import com.vadimkor.passwordmanagerv.MainActivity
+import com.vadimkor.passwordmanagerv.ui_main.activities.MainActivity
 import com.vadimkor.passwordmanagerv.R
-import com.vadimkor.passwordmanagerv.access.EMPTY
-import com.vadimkor.passwordmanagerv.access.PIN_CODE
-import com.vadimkor.passwordmanagerv.access.myPreferences
+import com.vadimkor.passwordmanagerv.ui_access.EMPTY
+import com.vadimkor.passwordmanagerv.ui_access.PIN_CODE
+import com.vadimkor.passwordmanagerv.ui_access.myPreferences
 import com.vadimkor.passwordmanagerv.extension.toast
 import kotlinx.android.synthetic.main.insert_pin_fragment.*
 

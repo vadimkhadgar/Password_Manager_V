@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
     android:layout_gravity="center"
-    tools:context=".access.fragments.add_pin.AddPinCode">
+    tools:context=".ui_access.fragments.add_pin.AddPinCode">
 
 
     <TextView

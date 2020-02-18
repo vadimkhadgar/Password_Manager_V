@@ -1,4 +1,4 @@
-package com.vadimkor.passwordmanagerv.access
+package com.vadimkor.passwordmanagerv.ui_access
 
 import android.content.Context
 import android.os.Bundle
@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.vadimkor.passwordmanagerv.R
-import com.vadimkor.passwordmanagerv.access.fragments.add_pin.AddPinCode
-import com.vadimkor.passwordmanagerv.access.fragments.login.InsertPin
+import com.vadimkor.passwordmanagerv.ui_access.fragments.add_pin.AddPinCode
+import com.vadimkor.passwordmanagerv.ui_access.fragments.login.InsertPin
 
 const val EMPTY = ""
 const val ERROR_INPUT_EMPTY = "Please fill all fields"
